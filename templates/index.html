@@ -1,16 +1,34 @@
 <!DOCTYPE html> 
 <html>
     <head>
+        
         <title>RaspberryPi Flask Webserver</title>
+    
         <link rel="stylesheet" href="/static/style.css" />
     </head>
-    <body>
-        <img src="static/roughneck.jpg" />
-        <h1>Welcome to the Dimmsdale Dimmadome</h1>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=SBxpeuxUiOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-            <a href="{{ url_for('about') }}">Goto About Us</a>
+    <body>
+        <!-- <img src="static/roughneck.jpg" /> -->
+        
+        <h1>Welcome to the Dimmsdale Dimmadome</h1>
+        
+        <button onclick="newDoc()">Pick ME!</button>
+
+        <p id="demo"></p>
+        
+        <script>
+            function myDoc() {
+              document.getElementById("demo").innerHTML = "Hello World";
+            }
+        </script>
+        
+        
+        <div class="video">
+          <!--   <iframe width="560" height="315" src="https://www.youtube.com/watch?v=SBxpeuxUiOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        
+
+          <a href="{{ url_for('about') }}">Goto About Us</a>
         </div>
+        
     </body>
 </html>

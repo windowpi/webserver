@@ -11,6 +11,11 @@ h1 {
     text-shadow: 3px 2xp black;
 }
 
+button {
+    padding: 12px 30px;
+    
+}
+
 .video {
     width: 500px;
     margin: 0 auto;
