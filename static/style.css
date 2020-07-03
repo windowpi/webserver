@@ -1,0 +1,18 @@
+body {
+    background: gray;
+    background-image: url("woodgrain.jpeg");
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 3px 2xp black;
+}
+
+.video {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
