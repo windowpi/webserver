@@ -11,22 +11,18 @@
         <!-- <img src="static/roughneck.jpg" /> -->
         
         <h1>Welcome to the Dimmsdale Dimmadome</h1>
-        
-        <button onclick="newDoc()">Pick ME!</button>
+
+        <!-- A button that tell the time and date. Wanna use for raspberrypi to display time with led's -->
+        <button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
 
         <p id="demo"></p>
         
-        <script>
-            function myDoc() {
-              document.getElementById("demo").innerHTML = "Hello World";
-            }
-        </script>
-        
         
         <div class="video">
+            <!-- This can put a video on page -->
           <!--   <iframe width="560" height="315" src="https://www.youtube.com/watch?v=SBxpeuxUiOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         
-
+            <!-- This makes a hyperlink for the about page-->  
           <a href="{{ url_for('about') }}">Goto About Us</a>
         </div>
         
